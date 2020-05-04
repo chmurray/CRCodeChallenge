@@ -1,0 +1,107 @@
+[
+  {
+    "idForDisplay": "Ames 811",
+    "lastUpdated": 1588538770000,
+    "agencyId": "sims",
+    "agencyName": "IA SIMS",
+    "name": "SELCO811 - IA 9 EB @ MM 257.5",
+    "location": {
+      "perpendicularRadiansForDirectionOfTravel": -0.958595588421689,
+      "latitude": 43.285778,
+      "longitude": -91.820886,
+      "routeId": "IA 9",
+      "linearReference": 257.5316801105627,
+      "fips": 19,
+      "signFacingDirection": "E",
+      "locationDescription": "IA 9 E at MP 257.5 (Decorah)",
+      "cityReference": "near Decorah"
+    },
+    "properties": {
+      "maxSignPhases": 3,
+      "phaseDwellTime": 2500,
+      "phaseBlankTime": 0,
+      "maxLinesPerPage": 3,
+      "maxCharactersPerLine": 16,
+      "sizeKnown": false
+    },
+    "id": "sims*Ames*9811",
+    "status": "BLANK"
+  },
+  {
+    "idForDisplay": "Ames ",
+    "lastUpdated": 1588538290000,
+    "agencyId": "sims",
+    "display": {
+      "pages": [
+        {
+          "lines": [
+            "DISINFECT",
+            "TO PROTECT",
+            "WASH YOUR HANDS"
+          ],
+          "justification": "CENTER"
+        },
+        {
+          "lines": [
+            "DISINFECT",
+            "TO PROTECT",
+            "WASH YOUR HANDS"
+          ],
+          "justification": "CENTER"
+        }
+      ]
+    },
+    "agencyName": "IA SIMS",
+    "name": "I-35 NB @ Mills Civic - OH",
+    "location": {
+      "perpendicularRadiansForDirectionOfTravel": 0.04563249112573864,
+      "latitude": 41.558371,
+      "longitude": -93.776307,
+      "routeId": "I-35",
+      "linearReference": 70.43502194639743,
+      "fips": 19,
+      "signFacingDirection": "N",
+      "locationDescription": "I-35 N at Exit 70: Mills Civic Parkway, MP 70.4 (West Des Moines)",
+      "cityReference": "in West Des Moines"
+    },
+    "properties": {
+      "maxSignPhases": 3,
+      "phaseDwellTime": 2500,
+      "phaseBlankTime": 0,
+      "maxLinesPerPage": 3,
+      "maxCharactersPerLine": 16,
+      "sizeKnown": false
+    },
+    "id": "sims*Ames*1",
+    "status": "DISPLAYING_MESSAGE"
+  },
+  {
+    "idForDisplay": "Ames ",
+    "lastUpdated": 1588538292000,
+    "agencyId": "sims",
+    "agencyName": "IA SIMS",
+    "name": "B38217 - Des Moines - PT",
+    "location": {
+      "perpendicularRadiansForDirectionOfTravel": 1.6388775757159717,
+      "latitude": 41.68693,
+      "longitude": -93.60282,
+      "routeId": "US 30",
+      "linearReference": 143.66784636159272,
+      "fips": 19,
+      "signFacingDirection": "W",
+      "locationDescription": "US 30 W at Exit 146: University Boulevard, MP 143.7 (Ames)",
+      "cityReference": "in Ames"
+    },
+    "properties": {
+      "maxSignPhases": 3,
+      "phaseDwellTime": 2500,
+      "phaseBlankTime": 0,
+      "maxLinesPerPage": 3,
+      "maxCharactersPerLine": 16,
+      "sizeKnown": false
+    },
+    "id": "sims*Ames*8",
+    "status": "BLANK"
+  }
+]
+

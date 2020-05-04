@@ -31,15 +31,15 @@ static NSString * const kDisplayingMessage = @"DISPLAYING_MESSAGE";
         error = [self setName:sign fromDictionary:dictionaries[i]];
         
         if( !error ) {
-            [self setIsDisplaying:sign fromDictionary:dictionaries[i]];
+            error = [self setIsDisplaying:sign fromDictionary:dictionaries[i]];
         }
         
         if( !error ) {
-            [self setTimestamp:sign fromDictionary:dictionaries[i]];
+            error = [self setTimestamp:sign fromDictionary:dictionaries[i]];
         }
             
         if( !error ) {
-            [self setText:sign fromDictionary:dictionaries[i]];
+            error = [self setText:sign fromDictionary:dictionaries[i]];
         }
         
         if( !error ) {
@@ -89,35 +89,42 @@ static NSString * const kDisplayingMessage = @"DISPLAYING_MESSAGE";
     return error;
 }
 
+// I'd welcome any advice on the gnarly, nested if/else/for in this function
 - (NSError *)setText:(CRSign *)sign fromDictionary:(NSDictionary *)dictionary {
     
     NSError *error = nil;
     NSError *failure = [NSError errorWithDomain:kSignBuilderErrorDomain code:CRSignBuilderErrorFailedParsingPayload userInfo:@{ NSLocalizedDescriptionKey: @"problem with text"}];
-
     NSMutableArray<NSString *> *text = [[NSMutableArray alloc] init];
+
     // The text field is optional
     if (dictionary[kTextTopField]) {
         
         // There must be an array of pages if the text field exists
-        if (dictionary[kTextTopField][kTextPageArrayField]) {
-            for (NSDictionary *lineDictionary in dictionary[kTextTopField][kTextPageArrayField]) {
+        NSArray *pages = dictionary[kTextTopField][kTextPageArrayField];
+        if (!pages) {
+            error = failure;
+        } else {
+            for (NSDictionary *page in pages) {
                 
                 // Each page must contain an array of text
-                if (nil == error  &&  lineDictionary[kTextLinesField]) {
-                    for (NSString *line in lineDictionary[kTextLinesField]) {
+                NSArray *lines = page[kTextLinesField];
+                if( !lines ) {
+                    error = failure;
+                } else if (nil == error  &&  lines) {
+                    for (NSString *line in lines) {
                         NSCharacterSet *quoteCharset = [NSCharacterSet characterSetWithCharactersInString:@"\""];
                         NSString *trimmedLine = [line stringByTrimmingCharactersInSet:quoteCharset];
 
                         [text addObject:trimmedLine];
-                    }
-                } else {
-                    error = failure;
-                }
-            }
-        } else {
-            error = failure;
-        }
-    }
+                    } // for (line)
+                    
+                } // if (lines)
+                
+            } // for (page)
+            
+        } // if (pages)
+        
+    } // if (dictionary[kTextTopField])
     
     if( !error ) {
         sign.text = text;

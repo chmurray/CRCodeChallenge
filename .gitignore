@@ -22,5 +22,4 @@ DerivedData
 .ruby-*
 report*.html
 *.log
-Pods
-Podfile*.lock
+

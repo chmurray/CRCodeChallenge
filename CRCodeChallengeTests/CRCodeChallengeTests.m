@@ -7,30 +7,46 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "CRSignBuilder.h"
 
+/* This is just an initial proof-of-life test.
+ */
 @interface CRCodeChallengeTests : XCTestCase
+
+@property (nonatomic, strong)  NSData * _Nullable validData;
 
 @end
 
 @implementation CRCodeChallengeTests
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *path = [bundle pathForResource:@"ValidData" ofType:@"json"];
+    self.validData = [NSData dataWithContentsOfFile:path];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.validData = nil;
+
+    [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
+- (void)testValidData {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Expecting validData result"];
+    
+    CRSignBuilder *signBuilder = [[CRSignBuilder alloc] init];
+    [signBuilder buildSignsFromData:self.validData completion:^(NSError * _Nullable error, NSArray<CRSign *> * _Nullable signs) {
+        XCTAssert(nil == error, @"Valid JSON produced an error");
+        XCTAssert(3 == signs.count, @"Parsed the wrong number of signs");
+        [expectation fulfill];
+    }];
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+    [self waitForExpectationsWithTimeout:10.0 handler:^(NSError * _Nullable error) {
+        if (error != nil) {
+            NSLog(@"Error: %@", error.localizedDescription);
+        }
     }];
 }
 

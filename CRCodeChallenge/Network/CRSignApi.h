@@ -20,7 +20,6 @@ extern NSString * _Nonnull const kSignApiErrorDomain;
 typedef NS_ENUM(NSInteger, CRSignAPIError) {
     CRSignApiErrorRequestFailed,
     CRSignApiErrorEmptyPayload,
-    CRSignApiErrorFailedParsingPayload,
 };
 
 - (void) downloadSignData: (nullable void (^)(NSError * _Nullable error, NSData * _Nullable signs)) completion;

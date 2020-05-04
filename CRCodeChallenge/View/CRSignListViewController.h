@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/* CRSignListViewController displays a list of signs to the user.
+   Only the sign names are presented.
+*/
 @interface CRSignListViewController : UIViewController
 
 

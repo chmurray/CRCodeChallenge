@@ -21,6 +21,9 @@
 		2683A380245F6E6800F79E5E /* CRSignManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A37F245F6E6800F79E5E /* CRSignManager.m */; };
 		2683A384245F757C00F79E5E /* CRSignBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A383245F757C00F79E5E /* CRSignBuilder.m */; };
 		2683A387245FF6E800F79E5E /* CRSignContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A386245FF6E800F79E5E /* CRSignContentViewController.m */; };
+		2683A3892460833600F79E5E /* CRSignBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A383245F757C00F79E5E /* CRSignBuilder.m */; };
+		2683A38A2460834F00F79E5E /* CRSignApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A378245F593900F79E5E /* CRSignApi.m */; };
+		2683A38C246098C800F79E5E /* ValidData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2683A38B246098C500F79E5E /* ValidData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,7 @@
 		2683A383245F757C00F79E5E /* CRSignBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSignBuilder.m; sourceTree = "<group>"; };
 		2683A385245FF6E800F79E5E /* CRSignContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSignContentViewController.h; sourceTree = "<group>"; };
 		2683A386245FF6E800F79E5E /* CRSignContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSignContentViewController.m; sourceTree = "<group>"; };
+		2683A38B246098C500F79E5E /* ValidData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		2683A357245F4EE400F79E5E /* CRCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				2683A38B246098C500F79E5E /* ValidData.json */,
 				2683A358245F4EE500F79E5E /* CRCodeChallengeTests.m */,
 				2683A35A245F4EE500F79E5E /* Info.plist */,
 			);
@@ -307,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2683A38C246098C800F79E5E /* ValidData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +346,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2683A38A2460834F00F79E5E /* CRSignApi.m in Sources */,
 				2683A359245F4EE500F79E5E /* CRCodeChallengeTests.m in Sources */,
+				2683A3892460833600F79E5E /* CRSignBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +557,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.charris.CRCodeChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CRCodeChallenge.app/CRCodeChallenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/C Harris.app/C Harris";
 			};
 			name = Debug;
 		};
@@ -569,7 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.charris.CRCodeChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CRCodeChallenge.app/CRCodeChallenge";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/C Harris.app/C Harris";
 			};
 			name = Release;
 		};
