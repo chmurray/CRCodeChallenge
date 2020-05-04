@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K0f-nm-0V7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--All Signs-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CRSignListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wxR-10-TQK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CRSignTableViewCell" textLabel="Bjr-qI-Jh7" style="IBUITableViewCellStyleDefault" id="zsx-Bf-es9">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zsx-Bf-es9" id="eq4-7c-QEN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bjr-qI-Jh7">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zBm-cw-6bG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8dr-l8-Uvh"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="kZR-HW-ach">
+                                <rect key="frame" x="197" y="468" width="20" height="20"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-9F-1PH">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Yym-T9-BRK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="didTouchUpInsideRefreshButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Zq-yf-Uof"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wxR-10-TQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1ph-ss-1ZJ"/>
+                            <constraint firstItem="wxR-10-TQK" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="4Fr-km-a5C"/>
+                            <constraint firstItem="wxR-10-TQK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DTJ-HG-qTM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B1h-9F-1PH" secondAttribute="bottom" id="WKG-A6-hD2"/>
+                            <constraint firstItem="kZR-HW-ach" firstAttribute="centerY" secondItem="wxR-10-TQK" secondAttribute="centerY" id="Wbw-bB-6JC"/>
+                            <constraint firstItem="kZR-HW-ach" firstAttribute="centerX" secondItem="wxR-10-TQK" secondAttribute="centerX" id="gWt-2h-STM"/>
+                            <constraint firstItem="B1h-9F-1PH" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="jOb-kf-R5m"/>
+                            <constraint firstItem="B1h-9F-1PH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jlA-4t-Yie"/>
+                            <constraint firstItem="wxR-10-TQK" firstAttribute="bottom" secondItem="B1h-9F-1PH" secondAttribute="top" id="oZG-v9-qHI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="All Signs" id="fy8-QY-zaF">
+                        <barButtonItem key="backBarButtonItem" title="All Signs" id="tXy-I9-G2l"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="progressIndicator" destination="kZR-HW-ach" id="sgU-GF-hML"/>
+                        <outlet property="tableView" destination="wxR-10-TQK" id="vae-LU-3yT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715.94202898550725" y="-1.3392857142857142"/>
+        </scene>
+        <!--Sign Content View Controller-->
+        <scene sceneID="tjb-tV-TGs">
+            <objects>
+                <viewController storyboardIdentifier="CRSignContentViewController" id="o3a-oW-mIv" customClass="CRSignContentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gvJ-mH-ibh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-NL-JCR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uMI-NL-JCR" firstAttribute="height" secondItem="zDe-yb-SJi" secondAttribute="height" id="7vH-pp-G1j"/>
+                            <constraint firstItem="uMI-NL-JCR" firstAttribute="centerY" secondItem="zDe-yb-SJi" secondAttribute="centerY" id="GLL-QH-nC6"/>
+                            <constraint firstItem="uMI-NL-JCR" firstAttribute="width" secondItem="zDe-yb-SJi" secondAttribute="width" id="Y16-un-cNQ"/>
+                            <constraint firstItem="uMI-NL-JCR" firstAttribute="centerX" secondItem="zDe-yb-SJi" secondAttribute="centerX" id="xvY-hE-oh5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zDe-yb-SJi"/>
+                    </view>
+                    <connections>
+                        <outlet property="signTextLabel" destination="uMI-NL-JCR" id="aX1-pd-VBC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8KQ-Xq-4el" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842.0289855072465" y="1.3392857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oGD-tE-WVQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K0f-nm-0V7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VKH-PY-4X5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yj3-J7-D4S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIf-v9-UpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.20289855072465" y="-1.3392857142857142"/>
+        </scene>
+    </scenes>
+</document>

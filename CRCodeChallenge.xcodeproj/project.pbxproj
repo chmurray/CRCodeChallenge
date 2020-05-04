@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2683A33E245F4E8100F79E5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A33D245F4E8100F79E5E /* AppDelegate.m */; };
+		2683A341245F4E8100F79E5E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A340245F4E8100F79E5E /* SceneDelegate.m */; };
+		2683A344245F4E8100F79E5E /* CRSignListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A343245F4E8100F79E5E /* CRSignListViewController.m */; };
+		2683A347245F4E8100F79E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2683A345245F4E8100F79E5E /* Main.storyboard */; };
+		2683A349245F4EE400F79E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2683A348245F4EE400F79E5E /* Assets.xcassets */; };
+		2683A34C245F4EE400F79E5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2683A34A245F4EE400F79E5E /* LaunchScreen.storyboard */; };
+		2683A34F245F4EE400F79E5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A34E245F4EE400F79E5E /* main.m */; };
+		2683A359245F4EE500F79E5E /* CRCodeChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A358245F4EE500F79E5E /* CRCodeChallengeTests.m */; };
+		2683A364245F4EE500F79E5E /* CRCodeChallengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A363245F4EE500F79E5E /* CRCodeChallengeUITests.m */; };
+		2683A379245F593900F79E5E /* CRSignApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A378245F593900F79E5E /* CRSignApi.m */; };
+		2683A37D245F67C200F79E5E /* CRSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A37C245F67C200F79E5E /* CRSign.m */; };
+		2683A380245F6E6800F79E5E /* CRSignManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A37F245F6E6800F79E5E /* CRSignManager.m */; };
+		2683A384245F757C00F79E5E /* CRSignBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A383245F757C00F79E5E /* CRSignBuilder.m */; };
+		2683A387245FF6E800F79E5E /* CRSignContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683A386245FF6E800F79E5E /* CRSignContentViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2683A355245F4EE400F79E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2683A331245F4E8100F79E5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2683A338245F4E8100F79E5E;
+			remoteInfo = CRCodeChallenge;
+		};
+		2683A360245F4EE500F79E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2683A331245F4E8100F79E5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2683A338245F4E8100F79E5E;
+			remoteInfo = CRCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2683A339245F4E8100F79E5E /* C Harris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C Harris.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2683A33C245F4E8100F79E5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2683A33D245F4E8100F79E5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2683A33F245F4E8100F79E5E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2683A340245F4E8100F79E5E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2683A342245F4E8100F79E5E /* CRSignListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSignListViewController.h; sourceTree = "<group>"; };
+		2683A343245F4E8100F79E5E /* CRSignListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSignListViewController.m; sourceTree = "<group>"; };
+		2683A346245F4E8100F79E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2683A348245F4EE400F79E5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2683A34B245F4EE400F79E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2683A34D245F4EE400F79E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2683A34E245F4EE400F79E5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2683A354245F4EE400F79E5E /* CRCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2683A358245F4EE500F79E5E /* CRCodeChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRCodeChallengeTests.m; sourceTree = "<group>"; };
+		2683A35A245F4EE500F79E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2683A35F245F4EE500F79E5E /* CRCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2683A363245F4EE500F79E5E /* CRCodeChallengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRCodeChallengeUITests.m; sourceTree = "<group>"; };
+		2683A365245F4EE500F79E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2683A377245F593900F79E5E /* CRSignApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSignApi.h; sourceTree = "<group>"; };
+		2683A378245F593900F79E5E /* CRSignApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSignApi.m; sourceTree = "<group>"; };
+		2683A37B245F67C200F79E5E /* CRSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSign.h; sourceTree = "<group>"; };
+		2683A37C245F67C200F79E5E /* CRSign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSign.m; sourceTree = "<group>"; };
+		2683A37E245F6E6800F79E5E /* CRSignManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSignManager.h; sourceTree = "<group>"; };
+		2683A37F245F6E6800F79E5E /* CRSignManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSignManager.m; sourceTree = "<group>"; };
+		2683A382245F757C00F79E5E /* CRSignBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSignBuilder.h; sourceTree = "<group>"; };
+		2683A383245F757C00F79E5E /* CRSignBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSignBuilder.m; sourceTree = "<group>"; };
+		2683A385245FF6E800F79E5E /* CRSignContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSignContentViewController.h; sourceTree = "<group>"; };
+		2683A386245FF6E800F79E5E /* CRSignContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSignContentViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2683A336245F4E8100F79E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2683A351245F4EE400F79E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2683A35C245F4EE500F79E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2683A330245F4E8100F79E5E = {
+			isa = PBXGroup;
+			children = (
+				2683A33B245F4E8100F79E5E /* CRCodeChallenge */,
+				2683A357245F4EE400F79E5E /* CRCodeChallengeTests */,
+				2683A362245F4EE500F79E5E /* CRCodeChallengeUITests */,
+				2683A33A245F4E8100F79E5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2683A33A245F4E8100F79E5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2683A339245F4E8100F79E5E /* C Harris.app */,
+				2683A354245F4EE400F79E5E /* CRCodeChallengeTests.xctest */,
+				2683A35F245F4EE500F79E5E /* CRCodeChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2683A33B245F4E8100F79E5E /* CRCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				2683A37A245F672F00F79E5E /* Model */,
+				2683A372245F55AE00F79E5E /* Network */,
+				2683A381245F6FF800F79E5E /* Manager */,
+				2683A371245F559900F79E5E /* View */,
+				2683A33C245F4E8100F79E5E /* AppDelegate.h */,
+				2683A33D245F4E8100F79E5E /* AppDelegate.m */,
+				2683A33F245F4E8100F79E5E /* SceneDelegate.h */,
+				2683A340245F4E8100F79E5E /* SceneDelegate.m */,
+				2683A348245F4EE400F79E5E /* Assets.xcassets */,
+				2683A34A245F4EE400F79E5E /* LaunchScreen.storyboard */,
+				2683A34D245F4EE400F79E5E /* Info.plist */,
+				2683A34E245F4EE400F79E5E /* main.m */,
+			);
+			path = CRCodeChallenge;
+			sourceTree = "<group>";
+		};
+		2683A357245F4EE400F79E5E /* CRCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2683A358245F4EE500F79E5E /* CRCodeChallengeTests.m */,
+				2683A35A245F4EE500F79E5E /* Info.plist */,
+			);
+			path = CRCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		2683A362245F4EE500F79E5E /* CRCodeChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2683A363245F4EE500F79E5E /* CRCodeChallengeUITests.m */,
+				2683A365245F4EE500F79E5E /* Info.plist */,
+			);
+			path = CRCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		2683A371245F559900F79E5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2683A345245F4E8100F79E5E /* Main.storyboard */,
+				2683A342245F4E8100F79E5E /* CRSignListViewController.h */,
+				2683A343245F4E8100F79E5E /* CRSignListViewController.m */,
+				2683A385245FF6E800F79E5E /* CRSignContentViewController.h */,
+				2683A386245FF6E800F79E5E /* CRSignContentViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2683A372245F55AE00F79E5E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2683A377245F593900F79E5E /* CRSignApi.h */,
+				2683A378245F593900F79E5E /* CRSignApi.m */,
+				2683A382245F757C00F79E5E /* CRSignBuilder.h */,
+				2683A383245F757C00F79E5E /* CRSignBuilder.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2683A37A245F672F00F79E5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2683A37B245F67C200F79E5E /* CRSign.h */,
+				2683A37C245F67C200F79E5E /* CRSign.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2683A381245F6FF800F79E5E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2683A37E245F6E6800F79E5E /* CRSignManager.h */,
+				2683A37F245F6E6800F79E5E /* CRSignManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2683A338245F4E8100F79E5E /* CRCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2683A368245F4EE500F79E5E /* Build configuration list for PBXNativeTarget "CRCodeChallenge" */;
+			buildPhases = (
+				2683A335245F4E8100F79E5E /* Sources */,
+				2683A336245F4E8100F79E5E /* Frameworks */,
+				2683A337245F4E8100F79E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRCodeChallenge;
+			productName = CRCodeChallenge;
+			productReference = 2683A339245F4E8100F79E5E /* C Harris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2683A353245F4EE400F79E5E /* CRCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2683A36B245F4EE500F79E5E /* Build configuration list for PBXNativeTarget "CRCodeChallengeTests" */;
+			buildPhases = (
+				2683A350245F4EE400F79E5E /* Sources */,
+				2683A351245F4EE400F79E5E /* Frameworks */,
+				2683A352245F4EE400F79E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2683A356245F4EE400F79E5E /* PBXTargetDependency */,
+			);
+			name = CRCodeChallengeTests;
+			productName = CRCodeChallengeTests;
+			productReference = 2683A354245F4EE400F79E5E /* CRCodeChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2683A35E245F4EE500F79E5E /* CRCodeChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2683A36E245F4EE500F79E5E /* Build configuration list for PBXNativeTarget "CRCodeChallengeUITests" */;
+			buildPhases = (
+				2683A35B245F4EE500F79E5E /* Sources */,
+				2683A35C245F4EE500F79E5E /* Frameworks */,
+				2683A35D245F4EE500F79E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2683A361245F4EE500F79E5E /* PBXTargetDependency */,
+			);
+			name = CRCodeChallengeUITests;
+			productName = CRCodeChallengeUITests;
+			productReference = 2683A35F245F4EE500F79E5E /* CRCodeChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2683A331245F4E8100F79E5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Christine Harris";
+				TargetAttributes = {
+					2683A338245F4E8100F79E5E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					2683A353245F4EE400F79E5E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 2683A338245F4E8100F79E5E;
+					};
+					2683A35E245F4EE500F79E5E = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 2683A338245F4E8100F79E5E;
+					};
+				};
+			};
+			buildConfigurationList = 2683A334245F4E8100F79E5E /* Build configuration list for PBXProject "CRCodeChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2683A330245F4E8100F79E5E;
+			productRefGroup = 2683A33A245F4E8100F79E5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2683A338245F4E8100F79E5E /* CRCodeChallenge */,
+				2683A353245F4EE400F79E5E /* CRCodeChallengeTests */,
+				2683A35E245F4EE500F79E5E /* CRCodeChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2683A337245F4E8100F79E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2683A34C245F4EE400F79E5E /* LaunchScreen.storyboard in Resources */,
+				2683A349245F4EE400F79E5E /* Assets.xcassets in Resources */,
+				2683A347245F4E8100F79E5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2683A352245F4EE400F79E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2683A35D245F4EE500F79E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2683A335245F4E8100F79E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2683A379245F593900F79E5E /* CRSignApi.m in Sources */,
+				2683A380245F6E6800F79E5E /* CRSignManager.m in Sources */,
+				2683A37D245F67C200F79E5E /* CRSign.m in Sources */,
+				2683A344245F4E8100F79E5E /* CRSignListViewController.m in Sources */,
+				2683A387245FF6E800F79E5E /* CRSignContentViewController.m in Sources */,
+				2683A33E245F4E8100F79E5E /* AppDelegate.m in Sources */,
+				2683A34F245F4EE400F79E5E /* main.m in Sources */,
+				2683A341245F4E8100F79E5E /* SceneDelegate.m in Sources */,
+				2683A384245F757C00F79E5E /* CRSignBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2683A350245F4EE400F79E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2683A359245F4EE500F79E5E /* CRCodeChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2683A35B245F4EE500F79E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2683A364245F4EE500F79E5E /* CRCodeChallengeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2683A356245F4EE400F79E5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2683A338245F4E8100F79E5E /* CRCodeChallenge */;
+			targetProxy = 2683A355245F4EE400F79E5E /* PBXContainerItemProxy */;
+		};
+		2683A361245F4EE500F79E5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2683A338245F4E8100F79E5E /* CRCodeChallenge */;
+			targetProxy = 2683A360245F4EE500F79E5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2683A345245F4E8100F79E5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2683A346245F4E8100F79E5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2683A34A245F4EE400F79E5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2683A34B245F4EE400F79E5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2683A366245F4EE500F79E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2683A367245F4EE500F79E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2683A369245F4EE500F79E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DAV56U922;
+				INFOPLIST_FILE = CRCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charris.CRCodeChallenge;
+				PRODUCT_NAME = "C Harris";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2683A36A245F4EE500F79E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DAV56U922;
+				INFOPLIST_FILE = CRCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charris.CRCodeChallenge;
+				PRODUCT_NAME = "C Harris";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2683A36C245F4EE500F79E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DAV56U922;
+				INFOPLIST_FILE = CRCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charris.CRCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CRCodeChallenge.app/CRCodeChallenge";
+			};
+			name = Debug;
+		};
+		2683A36D245F4EE500F79E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DAV56U922;
+				INFOPLIST_FILE = CRCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charris.CRCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CRCodeChallenge.app/CRCodeChallenge";
+			};
+			name = Release;
+		};
+		2683A36F245F4EE500F79E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DAV56U922;
+				INFOPLIST_FILE = CRCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charris.CRCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CRCodeChallenge;
+			};
+			name = Debug;
+		};
+		2683A370245F4EE500F79E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DAV56U922;
+				INFOPLIST_FILE = CRCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charris.CRCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CRCodeChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2683A334245F4E8100F79E5E /* Build configuration list for PBXProject "CRCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2683A366245F4EE500F79E5E /* Debug */,
+				2683A367245F4EE500F79E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2683A368245F4EE500F79E5E /* Build configuration list for PBXNativeTarget "CRCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2683A369245F4EE500F79E5E /* Debug */,
+				2683A36A245F4EE500F79E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2683A36B245F4EE500F79E5E /* Build configuration list for PBXNativeTarget "CRCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2683A36C245F4EE500F79E5E /* Debug */,
+				2683A36D245F4EE500F79E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2683A36E245F4EE500F79E5E /* Build configuration list for PBXNativeTarget "CRCodeChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2683A36F245F4EE500F79E5E /* Debug */,
+				2683A370245F4EE500F79E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2683A331245F4E8100F79E5E /* Project object */;
+}
