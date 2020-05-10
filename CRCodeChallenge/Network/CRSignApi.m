@@ -49,7 +49,7 @@ static NSString * const kSignApiUrl = @"https://iatg.carsprogram.org/signs_v1/ap
                          }
                      } else {
                          if (completion) {
-                             completion([NSError errorWithDomain:kSignApiErrorDomain code:CRSignApiErrorRequestFailed userInfo:@{ NSLocalizedDescriptionKey: @"API returned 0 bytes for sign data request"}], nil);
+                             completion([NSError errorWithDomain:kSignApiErrorDomain code:CRSignApiErrorEmptyPayload userInfo:@{ NSLocalizedDescriptionKey: @"API returned 0 bytes for sign data request"}], nil);
                          }
                      }
                  } else {
